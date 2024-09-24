@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmokeTree Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2e2b2b 0%, #668281 100%);
+        }
+        
+        form {
+            background: linear-gradient(135deg, #070707 0%, #d8dcdc 100%);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #140707;
+        }
+        
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #060101;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        input[type="submit"] {
+            background-color: #0ade11;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0fbc18;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="post">
+        <h2>Register User</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
